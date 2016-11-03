@@ -20,7 +20,7 @@ ORACLE_HOME=		${PREFIX}/oracle/instant_client/${ORACLEVERSION}
 #.endif
 
 BUILDLINK_PASSTHRU_DIRS+=       ${ORACLE_HOME}
-CONFIGURE_ARGS+=		--with-${MODNAME}=shared,${ORACLE_HOME}
+CONFIGURE_ARGS+=		--with-${MODNAME}=instantclient,${ORACLE_HOME}
 
 ONLY_FOR_PLATFORM=      Linux-*-* SunOS-*-*
 
