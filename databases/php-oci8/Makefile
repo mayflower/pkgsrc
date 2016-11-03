@@ -13,14 +13,8 @@ DEPENDS+=               oracle-instantclient-basic>=${ORACLEVERSION}:../../datab
 DEPENDS+=               oracle-instantclient-sdk>=${ORACLEVERSION}:../../databases/oracle-instantclient-sdk
 ORACLE_HOME=		${PREFIX}/oracle/instant_client/${ORACLEVERSION}
 
-#.if !defined(ORACLE_HOME)
-#PKG_FAIL_REASON+=	"You must set ORACLE_HOME to the location of your Oracle installation"
-#.elif !exists(${ORACLE_HOME})
-#PKG_FAIL_REASON+=	"The location of ORACLE_HOME does not exist"
-#.endif
-
 BUILDLINK_PASSTHRU_DIRS+=       ${ORACLE_HOME}
-CONFIGURE_ARGS+=		--with-${MODNAME}=shared,${ORACLE_HOME}
+CONFIGURE_ARGS+=		--with-${MODNAME}=instantclient,${ORACLE_HOME}
 
 ONLY_FOR_PLATFORM=      Linux-*-* SunOS-*-*
 
