@@ -19,8 +19,8 @@ ORACLE_HOME=		${PREFIX}/oracle/instant_client/${ORACLEVERSION}
 #PKG_FAIL_REASON+=	"The location of ORACLE_HOME does not exist"
 #.endif
 
-BUILDLINK_PASSTHRU_DIRS+=	${ORACLE_HOME}
-CONFIGURE_ARGS+=		--with-${MODNAME}=shared,${ORACLE_HOME}
+BUILDLINK_PASSTHRU_DIRS+=       ${ORACLE_HOME}
+CONFIGURE_ARGS+=		--with-${MODNAME}=instantclient,${ORACLE_HOME}
 
 ONLY_FOR_PLATFORM=	Linux-*-* SunOS-*-*
 
