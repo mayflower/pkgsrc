@@ -4,7 +4,6 @@ SHA1 (gearmand-1.0.6.tar.gz) = 872d5e13c20a29a20e45df3afa8f3981dc52d363
 RMD160 (gearmand-1.0.6.tar.gz) = 44f1caead6fbd7e6a440be3275098bd798a807d0
 SHA512 (gearmand-1.0.6.tar.gz) = 90e79935760ac1279b8fc82dff619e9c54b0f2d30e80f5ea0fe668a23e0e0e7651dfe032e255af209f7ee6bacf6ed492d20154a8763fda469d99f6dc953066d6
 Size (gearmand-1.0.6.tar.gz) = 935050 bytes
-SHA1 (patch-Makefile.in) = ec857867640d5282dc9a06ab8258c82b8cb1ba55
 SHA1 (patch-benchmark_blobslap__worker.cc) = 12f805d65b36a2f25e5751b8c36a95ac28ec757a
 SHA1 (patch-configure) = d5eb9dc8bf6aec65580de30734e3e4b6505cd0ae
 SHA1 (patch-examples_reverse__client.cc) = 3e8a27626c8a922919adfddcd9b3b4bfec06390d
