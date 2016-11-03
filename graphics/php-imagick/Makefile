@@ -12,10 +12,10 @@ LICENSE=		php
 
 PHP_VERSIONS_ACCEPTED=	56 70 71 72
 
-CONFIGURE_ARGS+=	--with-imagick=${BUILDLINK_PREFIX.ImageMagick}
+CONFIGURE_ARGS+=	--with-imagick=${BUILDLINK_PREFIX.ImageMagick6}
 
 TEST_TARGET=		test
 
-.include "../../graphics/ImageMagick/buildlink3.mk"
+.include "../../graphics/ImageMagick6/buildlink3.mk"
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"
