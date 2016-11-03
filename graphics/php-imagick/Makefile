@@ -10,10 +10,10 @@ COMMENT=		PHP extension for ImageMagick graphics library
 PKGREVISION=		7
 LICENSE=		php
 
-CONFIGURE_ARGS+=	--with-imagick=${BUILDLINK_PREFIX.ImageMagick}
+CONFIGURE_ARGS+=	--with-imagick=${BUILDLINK_PREFIX.ImageMagick6}
 
 TEST_TARGET=		test
 
-.include "../../graphics/ImageMagick/buildlink3.mk"
+.include "../../graphics/ImageMagick6/buildlink3.mk"
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"
