@@ -8,11 +8,16 @@ USE_PHP_EXT_PATCHES=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !defined(ORACLE_HOME)
-PKG_FAIL_REASON+=	"You must set ORACLE_HOME to the location of your Oracle installation"
-.elif !exists(${ORACLE_HOME})
-PKG_FAIL_REASON+=	"The location of ORACLE_HOME does not exist"
-.endif
+ORACLEVERSION=		11.2.0.4.0
+DEPENDS+=               oracle-instantclient-basic>=${ORACLEVERSION}:../../databases/oracle-instantclient-basic
+DEPENDS+=               oracle-instantclient-sdk>=${ORACLEVERSION}:../../databases/oracle-instantclient-sdk
+ORACLE_HOME=		${PREFIX}/oracle/instant_client/${ORACLEVERSION}
+
+#.if !defined(ORACLE_HOME)
+#PKG_FAIL_REASON+=	"You must set ORACLE_HOME to the location of your Oracle installation"
+#.elif !exists(${ORACLE_HOME})
+#PKG_FAIL_REASON+=	"The location of ORACLE_HOME does not exist"
+#.endif
 
 BUILDLINK_PASSTHRU_DIRS+=       ${ORACLE_HOME}
 CONFIGURE_ARGS+=		--with-${MODNAME}=shared,${ORACLE_HOME}
