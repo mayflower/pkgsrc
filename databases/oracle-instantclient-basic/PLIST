@@ -1,0 +1,13 @@
+@comment $NetBSD$
+oracle/instant_client/${ORACLEVERSION}/adrci
+oracle/instant_client/${ORACLEVERSION}/genezi
+oracle/instant_client/${ORACLEVERSION}/uidrvci
+oracle/instant_client/${ORACLEVERSION}/libclntsh.so
+oracle/instant_client/${ORACLEVERSION}/libclntsh.so.11.1
+oracle/instant_client/${ORACLEVERSION}/libnnz11.so
+oracle/instant_client/${ORACLEVERSION}/libocci.so.11.1
+oracle/instant_client/${ORACLEVERSION}/libociei.so
+oracle/instant_client/${ORACLEVERSION}/libocijdbc11.so
+oracle/instant_client/${ORACLEVERSION}/ojdbc5.jar
+oracle/instant_client/${ORACLEVERSION}/ojdbc6.jar
+oracle/instant_client/${ORACLEVERSION}/xstreams.jar
