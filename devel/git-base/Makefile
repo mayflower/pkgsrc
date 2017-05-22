@@ -9,12 +9,6 @@ CONFLICTS+=		scmgit-base-[0-9]*
 SUPERSEDES+=		scmgit-base-[0-9]*
 
 DEPENDS+=		p5-Error>=0.17015:../../devel/p5-Error
-# for git-send-email
-#DEPENDS+=		{perl>=5.13.8,p5-MIME-Base64>=3.13}:../../converters/p5-MIME-Base64
-DEPENDS+=		p5-Email-Valid>=0.190:../../mail/p5-Email-Valid
-DEPENDS+=		p5-MailTools>=2.11:../../mail/p5-MailTools
-DEPENDS+=		p5-Net-SMTP-SSL>=1.01:../../mail/p5-Net-SMTP-SSL
-DEPENDS+=		p5-Authen-SASL>=1.0:../../security/p5-Authen-SASL
 
 USE_LANGUAGES=		c99
 USE_TOOLS+=		perl:run sh:run msgfmt
