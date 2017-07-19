@@ -86,6 +86,7 @@ SUBDIR+=	libpqxx
 SUBDIR+=	libtcd
 SUBDIR+=	libzdb
 SUBDIR+=	liquibase
+SUBDIR+=	liquibase-oracle
 SUBDIR+=	lmdb
 SUBDIR+=	lua-dbi
 SUBDIR+=	lua-dbi-mysql
