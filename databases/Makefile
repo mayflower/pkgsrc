@@ -78,6 +78,7 @@ SUBDIR+=	libpqxx
 SUBDIR+=	libpqxx-doc
 SUBDIR+=	libzdb
 SUBDIR+=	liquibase
+SUBDIR+=	liquibase-oracle
 SUBDIR+=	lmdb
 SUBDIR+=	lua-sql-mysql
 SUBDIR+=	lua-sql-postgres
