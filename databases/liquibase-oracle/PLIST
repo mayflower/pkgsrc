@@ -1,0 +1,2 @@
+@comment $NetBSD$
+share/liquibase/lib/ojdbc6.jar
