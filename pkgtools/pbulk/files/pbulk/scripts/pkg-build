@@ -69,7 +69,8 @@ run_make() {
 	shift
 	${run_cmd} ${make} "$@" \
 		BATCH=1 \
-		DEPENDS_TARGET=/nonexistent \
+		PACKAGES=${packages} \
+		DEPENDS_TARGET=bin-install \
 		${MAKE_FLAGS} \
 		WRKLOG=${bulklog}/${pkgname}/work.log
 }
