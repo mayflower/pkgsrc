@@ -16,6 +16,8 @@ USE_LANGUAGES=		c c++11
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	bootstrap
 
+GCC_REQD+=	4.8
+
 BUILD_TARGET=		default_target
 
 CONFIGURE_HAS_MANDIR=	no
