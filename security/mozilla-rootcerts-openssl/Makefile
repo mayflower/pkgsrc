@@ -40,8 +40,6 @@ SET_PREFIX=		yes
 PLIST_SUBST+=		MYETCDIR=${MY_PKG_SYSCONFDIR:S/^${PREFIX}//}
 .endif
 
-NOT_FOR_UNPRIVILEGED=	yes
-
 OPENSSLDIR=		${PLACE}/openssl/certs
 
 do-install:
