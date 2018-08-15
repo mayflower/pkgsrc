@@ -21,9 +21,6 @@ lib/libboost_date_time.a
 lib/libboost_date_time.so
 lib/libboost_date_time.so.${BOOST_VERSION}
 lib/libboost_exception.a
-${PLIST.fiber}lib/libboost_fiber.a
-${PLIST.fiber}lib/libboost_fiber.so
-${PLIST.fiber}lib/libboost_fiber.so.${BOOST_VERSION}
 lib/libboost_filesystem.a
 lib/libboost_filesystem.so
 lib/libboost_filesystem.so.${BOOST_VERSION}
