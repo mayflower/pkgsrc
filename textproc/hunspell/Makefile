@@ -14,7 +14,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config perl:run autoreconf autoconf automake
 USE_PKGLOCALEDIR=	yes
-USE_LANGUAGES=		c c++03
+USE_LANGUAGES=		c c++
 
 CONFIGURE_ARGS+=	--with-ui
 
