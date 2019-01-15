@@ -55,7 +55,7 @@ SUBST_VARS.vars=	MACHINE_GNU_PLATFORM
 # to ease merging.
 SUBST_CLASSES+=		rpaths
 SUBST_STAGE.rpaths=	pre-configure
-SUBST_FILES.rpaths=	gcc/config/sol2-bi.h gcc/config/sol2.h
+SUBST_FILES.rpaths=	gcc/config/sol2.h
 SUBST_VARS.rpaths=	PREFIX
 .if !empty(MULTIARCH:M[Yy][Ee][Ss])
 SUBST_SED.rpaths=	-e 's,@MARCH64_SUBDIR@,ARCH64_SUBDIR,g'
@@ -63,9 +63,12 @@ SUBST_SED.rpaths=	-e 's,@MARCH64_SUBDIR@,ARCH64_SUBDIR,g'
 SUBST_SED.rpaths=	-e 's,@MARCH64_SUBDIR@,,g'
 .endif
 # For the tools build (i.e. when not using USE_GCC_LOCALBASE_PREFIX) we
-# do not want the PREFIX rpaths added above to leak into final binaries.
+# do not want to include any of the PREFIX library paths added by
+# patch-gcc_config_sol2.h, otherwise they would leak into the non-tools
+# builds.  The SUBST used here relies on SUBST_VARS coming after SUBST_SED.
 .if ${USE_GCC_LOCALBASE_PREFIX:Uno:tl} == "no"
-SUBST_SED.rpaths+=	-e '/-R/d'
+SUBST_SED.rpaths+=	-e '/-R@PREFIX@/d'
+SUBST_SED.rpaths+=	-e 's/:%R@PREFIX@[^}]*//'
 .endif
 
 LANGS=			c
