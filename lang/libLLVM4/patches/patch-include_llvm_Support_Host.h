@@ -1,4 +1,4 @@
-$NetBSD: patch-include_llvm_Support_Host.h,v 1.5 2017/12/08 02:14:44 gdt Exp $
+$NetBSD: patch-include_llvm_Support_Host.h,v 1.1 2019/01/26 20:14:02 tnn Exp $
 
 Fix lack of machine/endian.h on solaris
 http://permalink.gmane.org/gmane.comp.compilers.llvm.devel/63225

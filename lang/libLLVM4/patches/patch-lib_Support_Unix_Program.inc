@@ -1,4 +1,4 @@
-$NetBSD: patch-lib_Support_Unix_Program.inc,v 1.3 2017/12/08 02:14:44 gdt Exp $
+$NetBSD: patch-lib_Support_Unix_Program.inc,v 1.1 2019/01/26 20:14:02 tnn Exp $
 
 Remove bogus redefine.
 
