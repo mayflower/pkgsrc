@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.39 2019/01/30 11:48:00 markd Exp $
+# $NetBSD: Makefile,v 1.41 2019/02/02 02:52:09 markd Exp $
 
 DISTNAME=	collection-latexextra
-PKGNAME=	texlive-${DISTNAME}-2018pre4
+PKGNAME=	texlive-${DISTNAME}-2018pre5
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
-TEXLIVE_REV=	49774
+TEXLIVE_REV=	49867
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tug.org/texlive/
@@ -80,6 +80,7 @@ DEPENDS+=	tex-background-[0-9]*:../../print/tex-background
 # depend beamertheme-detlevcm
 # depend beamertheme-epyt
 # depend beamertheme-focus
+# depend beamertheme-light
 # depend beamertheme-metropolis
 # depend beamertheme-npbt
 # depend beamertheme-phnompenh
@@ -93,7 +94,7 @@ DEPENDS+=	tex-beton-[0-9]*:../../print/tex-beton
 DEPENDS+=	tex-bezos-[0-9]*:../../print/tex-bezos
 # depend bhcexam
 # depend bibletext
-# depend bigfoot
+DEPENDS+=	tex-bigfoot-[0-9]*:../../print/tex-bigfoot
 # depend bigints
 # depend biochemistry-colors
 # depend bizcard
@@ -501,6 +502,7 @@ DEPENDS+=	tex-g-brief-[0-9]*:../../print/tex-g-brief
 # depend gitinfo
 # depend gitinfo2
 # depend gitlog
+# depend globalvals
 # depend gloss
 DEPENDS+=	tex-glossaries-[0-9]*:../../print/tex-glossaries
 # depend glossaries-danish
@@ -600,7 +602,7 @@ DEPENDS+=	tex-incgraph-[0-9]*:../../graphics/tex-incgraph
 # depend kalendarium
 # depend kantlipsum
 # depend kerntest
-# depend keycommand
+DEPENDS+=	tex-keycommand-[0-9]*:../../print/tex-keycommand
 # depend keyfloat
 # depend keyreader
 # depend keystroke
@@ -631,6 +633,7 @@ DEPENDS+=	tex-lazylist-[0-9]*:../../print/tex-lazylist
 # depend lcg
 DEPENDS+=	tex-leading-[0-9]*:../../print/tex-leading
 DEPENDS+=	tex-leaflet-[0-9]*:../../print/tex-leaflet
+# depend lectures
 DEPENDS+=	tex-leftidx-[0-9]*:../../print/tex-leftidx
 # depend leipzig
 # depend lengthconvert
@@ -981,7 +984,7 @@ DEPENDS+=	tex-secdot-[0-9]*:../../print/tex-secdot
 DEPENDS+=	tex-sectsty-[0-9]*:../../print/tex-sectsty
 # depend seealso
 DEPENDS+=	tex-selectp-[0-9]*:../../print/tex-selectp
-# depend semantic
+DEPENDS+=	tex-semantic-[0-9]*:../../print/tex-semantic
 # depend semantic-markup
 # depend semioneside
 # depend semproc
