@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.50 2020/06/02 08:23:36 adam Exp $
+# $NetBSD: Makefile,v 1.44 2020/01/18 21:48:03 jperkin Exp $
 
-DISTNAME=	gearmand-1.1.18
-PKGREVISION=	13
+DISTNAME=	gearmand-1.0.6
+PKGREVISION=	29
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GITHUB:=gearman/}
-GITHUB_PROJECT=	gearmand
-GITHUB_RELEASE=	${PKGVERSION_NOREV}
+MASTER_SITES=	https://launchpad.net/gearmand/1.0/1.0.6/+download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gearman.org/
@@ -30,10 +28,8 @@ PKGCONFIG_OVERRIDE+=	support/gearmand.pc.in
 
 .include "../../devel/boost-headers/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
-.include "../../devel/gperf/buildlink3.mk"
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../devel/libexecinfo/buildlink3.mk"
-.include "../../devel/libuuid/buildlink3.mk"
 .include "../../security/libssh2/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
