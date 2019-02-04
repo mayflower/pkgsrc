@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.18779 2019/02/01 14:04:08 tnn Exp $
+$NetBSD: TODO,v 1.18782 2019/02/03 23:10:31 wiz Exp $
 
 Suggested new packages
 ======================
@@ -742,7 +742,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gssdp-1.0.3
 	o gst-plugins1-omx-1.10.0
 	o gthumb-3.4.0
-	o gtk3-3.24.4
 	o gtkglarea-2.1.0
 	o gtklevel9-5.1
 	o gtkmagnetic-23
@@ -1019,7 +1018,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o mono2-4.0.4.1
 	o monodevelop-5.10.1.6
 	o mopher-0.6.0
-	o moreutils-0.63
 	o moserial-2.30.0 [GNOME 2.30]
 	o mousetweaks-3.12.0 [wip]
 	o mpdas-0.4.1
@@ -1342,7 +1340,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o tomboy-1.10.2
 	o top-3.8beta1
 	o topgit-0.8
-	o tor-browser-8.0.4
+	o tor-browser-8.0.5
 	o totem-3.14.1
 	o totem-pl-parser-3.10.3
 	o tripwire-2.3.1 [see also pkg/22362]
