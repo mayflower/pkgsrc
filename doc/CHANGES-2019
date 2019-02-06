@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2019,v 1.608 2019/02/06 11:31:46 martin Exp $
+$NetBSD: CHANGES-2019,v 1.621 2019/02/06 18:50:16 schmonz Exp $
 
 Changes to the packages collection and infrastructure in 2019:
 
@@ -1192,3 +1192,29 @@ Changes to the packages collection and infrastructure in 2019:
 	Updated devel/py-xopen to 0.5.0 [adam 2019-02-06]
 	Updated devel/gobject-introspection to 1.56.1nb1 [martin 2019-02-06]
 	Updated devel/xfce4-conf to 4.13.6nb1 [martin 2019-02-06]
+	Updated graphics/papirus-icon-theme to 20190203 [nia 2019-02-06]
+	Updated print/ghostscript to 9.26 [wiz 2019-02-06]
+	Updated www/ruby-jekyll to 3.8.5 [taca 2019-02-06]
+	Updated www/ruby-sinatra to 2.0.5 [taca 2019-02-06]
+	Updated www/ruby-sinatra-contrib to 2.0.5 [taca 2019-02-06]
+	Updated www/ruby-padrino-support to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-helpers to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-core to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-admin to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-cache to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-gen to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino-mailer to 0.14.4 [taca 2019-02-06]
+	Updated www/ruby-padrino to 0.14.4 [taca 2019-02-06]
+	Updated devel/ruby-rspec-support to 3.8.0 [taca 2019-02-06]
+	Updated devel/ruby-rspec-core to 3.8.0 [taca 2019-02-06]
+	Updated devel/ruby-rspec-expectations to 3.8.2 [taca 2019-02-06]
+	Updated devel/ruby-rspec to 3.8.0 [taca 2019-02-06]
+	Updated devel/ruby-rspec-rails to 3.8.2 [taca 2019-02-06]
+	Updated math/ruby-spreadsheet to 1.1.9 [taca 2019-02-06]
+	Updated math/ruby-roo to 2.8.2 [taca 2019-02-06]
+	Updated databases/postgresql10-server to 10.6nb1 [schmonz 2019-02-06]
+	Updated databases/postgresql11-server to 11.1nb1 [schmonz 2019-02-06]
+	Updated databases/postgresql93-server to 9.3.25nb1 [schmonz 2019-02-06]
+	Updated databases/postgresql94-server to 9.4.20nb1 [schmonz 2019-02-06]
+	Updated databases/postgresql95-server to 9.5.15nb1 [schmonz 2019-02-06]
+	Updated databases/postgresql96-server to 9.6.11nb1 [schmonz 2019-02-06]
