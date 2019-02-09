@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2019,v 1.631 2019/02/07 15:14:16 nia Exp $
+$NetBSD: CHANGES-2019,v 1.654 2019/02/09 09:13:43 maya Exp $
 
 Changes to the packages collection and infrastructure in 2019:
 
@@ -1236,3 +1236,27 @@ Changes to the packages collection and infrastructure in 2019:
 	Added ham/kalibrate-rtl version 20131215 [tnn 2019-02-07]
 	Updated chat/atheme to 7.2.9 [nia 2019-02-07]
 	Updated chat/eggdrop to 1.8.4 [nia 2019-02-07]
+	Updated www/ikiwiki to 3.20190207 [schmonz 2019-02-07]
+	Updated net/dhcpcd to 7.1.1 [roy 2019-02-07]
+	Updated mail/getmail to 5.9 [schmonz 2019-02-07]
+	Updated net/youtube-dl to 20190208 [leot 2019-02-07]
+	Updated textproc/py-openpyxl to 2.6.0 [adam 2019-02-08]
+	Updated textproc/py-natsort to 6.0.0 [adam 2019-02-08]
+	Updated chat/ircd-hybrid to 8.2.24 [fox 2019-02-08]
+	Updated chat/psi to 1.4 [nia 2019-02-08]
+	Updated databases/lbdb to 0.48.1 [tonio 2019-02-08]
+	Updated www/p5-HTML-Restrict to 2.5.0 [wen 2019-02-08]
+	Updated www/drupal8 to 8.6.9 [wen 2019-02-09]
+	Updated www/drupal7 to 7.64 [wen 2019-02-09]
+	Updated databases/p5-Data-Table to 1.77 [wen 2019-02-09]
+	Updated databases/p5-DBD-ODBC to 1.60 [wen 2019-02-09]
+	Updated devel/p5-File-ChangeNotify to 0.31 [wen 2019-02-09]
+	Updated devel/p5-glib2 to 1.329 [wen 2019-02-09]
+	Updated devel/p5-Inline to 0.81 [wen 2019-02-09]
+	Updated print/p5-biblatex-biber to 2.12 [markd 2019-02-09]
+	Added devel/p5-Regexp-Trie version 0.02 [wen 2019-02-09]
+	Added devel/p5-Perl-PrereqScanner-NotQuiteLite version 0.9904 [wen 2019-02-09]
+	Updated devel/p5-Module-CPANTS-Analyse to 1.00 [wen 2019-02-09]
+	Updated devel/p5-Test-Kwalitee to 1.28 [wen 2019-02-09]
+	Updated textproc/p5-Encode to 3.00 [wen 2019-02-09]
+	Updated sysutils/memtestplus to 5.01nb6 [maya 2019-02-09]
