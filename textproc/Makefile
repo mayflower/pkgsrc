@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1020 2019/01/30 12:56:14 leot Exp $
+# $NetBSD: Makefile,v 1.1022 2019/02/12 09:10:31 adam Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -378,6 +378,7 @@ SUBDIR+=	libpinyin
 SUBDIR+=	libplist
 SUBDIR+=	libunicode
 SUBDIR+=	libunistring
+SUBDIR+=	libxls
 SUBDIR+=	libxlsxwriter
 SUBDIR+=	libxml
 SUBDIR+=	libxml++
@@ -799,6 +800,7 @@ SUBDIR+=	py-libxslt
 SUBDIR+=	py-loremipsum
 SUBDIR+=	py-lxml
 SUBDIR+=	py-m2r
+SUBDIR+=	py-manuel
 SUBDIR+=	py-marisa
 SUBDIR+=	py-markdown
 SUBDIR+=	py-markdown2

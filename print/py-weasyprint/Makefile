@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2019/01/05 18:15:12 kleink Exp $
+# $NetBSD: Makefile,v 1.21 2019/02/12 12:45:36 kleink Exp $
 
 DISTNAME=	WeasyPrint-44
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:tl}
+PKGREVISION=	2
 CATEGORIES=	print python
 MASTER_SITES=	${MASTER_SITE_PYPI:=W/WeasyPrint/}
 
@@ -30,7 +31,7 @@ USE_LANGUAGES=	# none
 SUBST_CLASSES+=		pyversfx
 SUBST_STAGE.pyversfx=	pre-configure
 SUBST_FILES.pyversfx=	setup.cfg
-SUBST_SED.pyversfx=	-e "s|@PYVERSSUFFIX@|${PYVERSSUFFIX}|g"
+SUBST_VARS.pyversfx=	PYVERSSUFFIX
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
