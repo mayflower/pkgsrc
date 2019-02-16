@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1 2019/02/13 05:20:15 kamil Exp $
+# $NetBSD: Makefile,v 1.7 2019/02/15 00:49:08 kamil Exp $
 
 GITHUB_PROJECT=	haxm
-GITHUB_TAG=	c072ad9b68e1d558a9fb791511468d10a1a9b319
-DISTNAME=	haxm-0.${GITHUB_TAG}
+GITHUB_TAG=	3bdfd1a39021df9b4dfe69e05a277e4e6456494a
+DISTNAME=	haxm-1.20190214.${GITHUB_TAG}
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_GITHUB:=intel/}
+
+PKGREVISION=	1
 
 MAINTAINER=	kamil@NetBSD.org
 HOMEPAGE=	https://github.com/intel/haxm/
@@ -16,9 +18,15 @@ WRKSRC=		${WRKDIR}/haxm-${GITHUB_TAG}
 ONLY_FOR_PLATFORM=	NetBSD-*-x86_64
 OSVERSION_SPECIFIC=	YES
 
+BUILD_DEPENDS+=	nasm-[0-9]*:../../devel/nasm
+
 BUILD_DIRS=	platforms/netbsd
 
+.include "../../mk/bsd.prefs.mk"
+
 BUILDLINK_PASSTHRU_DIRS+=	${BSDSRCDIR}/sys
+
+MAKE_FLAGS+=	S=${BSDSRCDIR}/sys
 
 BUILD_DEFS+=	BSDSRCDIR
 
@@ -29,10 +37,12 @@ CFLAGS+=	-Wno-error=address-of-packed-member
 .endif
 
 KMOD=		haxm.kmod
-KMODULEDIR=	stand/${MACHINE}/${OS_VERSION}/modules
+KMODULEDIR=	stand/${MACHINE}/${OS_VERSION}/modules/haxm
 
 INSTALLATION_DIRS+=	sbin		# auxiliary scripts
 INSTALLATION_DIRS+=	${KMODULEDIR}
+
+INSTALL_UNSTRIPPED=	yes # Kernel linker needs unstripped module
 
 PLIST_SUBST+=	MACHINE=${MACHINE}
 
