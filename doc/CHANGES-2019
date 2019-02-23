@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2019,v 1.847 2019/02/21 22:49:15 rillig Exp $
+$NetBSD: CHANGES-2019,v 1.867 2019/02/23 20:34:05 triaxx Exp $
 
 Changes to the packages collection and infrastructure in 2019:
 
@@ -1522,3 +1522,24 @@ Changes to the packages collection and infrastructure in 2019:
 	Updated www/py-django-js-asset to 1.2.2 [adam 2019-02-21]
 	Updated www/webkit-gtk to 2.22.6nb1 [maya 2019-02-21]
 	Updated pkgtools/pkglint to 5.7.0 [rillig 2019-02-21]
+	Updated pkgtools/pkglint to 5.7.1 [rillig 2019-02-21]
+	Updated net/bind911 to 9.11.5pl4 [taca 2019-02-22]
+	Updated net/bind912 to 9.12.3pl4 [taca 2019-02-22]
+	Updated net/tor to 0.3.5.8 [adam 2019-02-22]
+	Updated net/py-apache-libcloud to 2.4.0 [adam 2019-02-22]
+	Updated audio/fasttracker2 to 2.137 [fox 2019-02-22]
+	Updated geography/p5-Geo-ShapeFile to 2.66 [wen 2019-02-22]
+	Updated devel/doxygen to 1.8.15nb1 [wiz 2019-02-22]
+	Updated mail/p5-Email-Address-List to 0.06 [wen 2019-02-22]
+	Updated mail/getmail to 5.12 [schmonz 2019-02-22]
+	Updated graphics/MesaLib18 to 18.3.4 [tnn 2019-02-22]
+	Added www/tscrape version 0.1 [leot 2019-02-22]
+	Updated mail/getmail to 5.13 [schmonz 2019-02-23]
+	Updated cad/gtkwave to 3.3.99 [mef 2019-02-23]
+	Updated net/mikutter to 3.8.6 [tsutsui 2019-02-23]
+	Added sysutils/arm-trusted-firmware-sun50i_a64 version 2.0 [martin 2019-02-23]
+	Updated ham/xlog to 2.0.17 [mef 2019-02-23]
+	Updated ham/fldigi to 4.1.01 [mef 2019-02-23]
+	Updated mail/mblaze to 0.5 [wiz 2019-02-23]
+	Added security/py-certbot-dns-nsone version 0.31.0 [triaxx 2019-02-23]
+	Added security/py-certbot-dns-luadns version 0.31.0 [triaxx 2019-02-23]
