@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.18863 2019/03/03 18:05:33 wiz Exp $
+$NetBSD: TODO,v 1.18865 2019/03/04 11:47:35 wiz Exp $
 
 Suggested new packages
 ======================
@@ -981,7 +981,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o mini_sendmail-1.3.9
 	o minivmac-3.2.3
 	o mit-scheme-bin-9.2
-	o mkfontscale-1.2.0
 	o modular-xorg-xquartz-1.18.0
 	o molden-4.8 [after which PR 40252 can be closed]
 	o molden-5.5
@@ -1370,7 +1369,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o xa65-2.3.7
 	o xaric-0.13.7
 	o xcoral-3.14
-	o xdm-1.1.12
 	o xerces-j-2.4.0 [pkg/21725]
 	o xerces-j-2.9.0
 	o xf86-video-geode-2.11.9 [wip]

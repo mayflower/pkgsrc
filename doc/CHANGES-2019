@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2019,v 1.1026 2019/03/04 01:38:17 schmonz Exp $
+$NetBSD: CHANGES-2019,v 1.1036 2019/03/04 12:08:26 adam Exp $
 
 Changes to the packages collection and infrastructure in 2019:
 
@@ -1760,3 +1760,15 @@ Changes to the packages collection and infrastructure in 2019:
 	Added devel/phpstorm-bin version 2018.3.4 [youri 2019-03-03]
 	Updated textproc/xapian to 1.4.11 [schmonz 2019-03-04]
 	Updated textproc/xapian-omega to 1.4.11 [schmonz 2019-03-04]
+	Updated www/py-djangorestframework to 3.9.2 [adam 2019-03-04]
+	Updated sysutils/py-structlog to 19.1.0 [adam 2019-03-04]
+	Updated math/py-numpy to 1.16.2 [adam 2019-03-04]
+	Updated x11/xditview to 1.0.5 [wiz 2019-03-04]
+	Updated x11/xinit to 1.4.1 [wiz 2019-03-04]
+	Updated x11/xlogo to 1.0.5 [wiz 2019-03-04]
+	Updated x11/xmore to 1.0.3 [wiz 2019-03-04]
+	Updated x11/xdm to 1.1.12 [wiz 2019-03-04]
+	Updated fonts/mkfontscale to 1.2.0 [wiz 2019-03-04]
+	Removed fonts/mkfontdir successor fonts/mkfontscale [wiz 2019-03-04]
+	Updated www/py-genshi to 0.7.1 [adam 2019-03-04]
+	Updated textproc/py-relatorio to 0.8.1 [adam 2019-03-04]
