@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.573 2019/03/03 16:13:44 taca Exp $
+# $NetBSD: Makefile,v 1.575 2019/03/05 15:55:13 taca Exp $
 
 COMMENT=	Databases
 
@@ -401,7 +401,6 @@ SUBDIR+=	repmgr
 SUBDIR+=	rrdtool
 SUBDIR+=	rrdtool12
 SUBDIR+=	ruby-activeldap
-SUBDIR+=	ruby-activerecord-cassandra
 SUBDIR+=	ruby-activerecord-odbc
 SUBDIR+=	ruby-activerecord42
 SUBDIR+=	ruby-activerecord51
@@ -411,7 +410,6 @@ SUBDIR+=	ruby-arel-helpers
 SUBDIR+=	ruby-arel60
 SUBDIR+=	ruby-arel80
 SUBDIR+=	ruby-awesome_nested_set
-SUBDIR+=	ruby-cassandra
 SUBDIR+=	ruby-data_objects
 SUBDIR+=	ruby-datamapper
 SUBDIR+=	ruby-dbd-mysql
