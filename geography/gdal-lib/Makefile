@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.109 2019/03/08 20:23:23 gdt Exp $
+# $NetBSD: Makefile,v 1.111 2019/03/09 17:39:01 gdt Exp $
 
-PKGREVISION=	9
+#PKGREVISION=	0
 .include "../../geography/gdal-lib/Makefile.common"
 PKGNAME=	${DISTNAME:S/gdal/gdal-lib/}
 
-MAINTAINER+=	gdt@NetBSD.org
-#MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://www.gdal.org/
 COMMENT=	Translator library for raster geospatial data formats
 LICENSE=	mit
+
+USE_LANGUAGES+=	c99 c++11
 
 # This package intends to link against only libgeos_c, but ends up
 # also linking to the C++ library libgeos, apparently because of a
@@ -17,7 +17,7 @@ LICENSE=	mit
 
 CONFIGURE_ARGS+=	--without-python
 
-CONFIGURE_ARGS+=	--with-static-proj4
+CONFIGURE_ARGS+=	--with-proj
 
 MAKE_FILE=		GNUmakefile
 
