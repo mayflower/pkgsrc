@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2019/03/27 10:08:42 adam Exp $
+# $NetBSD: Makefile,v 1.4 2019/04/04 08:07:54 bsiegert Exp $
 
 # Before updating, make sure net/samba4 supports the newer version.
 DISTNAME=	ldb-1.5.4
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://www.samba.org/ftp/ldb/
 
@@ -15,7 +16,7 @@ BUILD_DEPENDS+=	docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 
 PYTHON_VERSIONS_INCOMPATIBLE=	27
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 HAS_CONFIGURE=		yes
 CONFIG_SHELL=		${PYTHONBIN}
 CONFIGURE_SCRIPT=	${WRKSRC}/buildtools/bin/waf
@@ -62,6 +63,7 @@ CONFIGURE_ARGS+=	--without-ldb-lmdb
 .endif
 
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../databases/openldap-client/buildlink3.mk"
 .include "../../databases/tdb/buildlink3.mk"
 .include "../../devel/cmocka/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
