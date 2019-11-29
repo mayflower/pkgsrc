@@ -2,6 +2,7 @@
 oracle/instant_client/${ORACLEVERSION}/adrci
 oracle/instant_client/${ORACLEVERSION}/genezi
 oracle/instant_client/${ORACLEVERSION}/uidrvci
+oracle/instant_client/${ORACLEVERSION}/libclntshcore.so
 oracle/instant_client/${ORACLEVERSION}/libclntshcore.so.19.1
 oracle/instant_client/${ORACLEVERSION}/libclntsh.so.10.1
 oracle/instant_client/${ORACLEVERSION}/libclntsh.so.11.1
