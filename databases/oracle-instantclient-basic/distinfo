@@ -1,6 +1,6 @@
 $NetBSD$
 
-SHA1 (oracle/instantclient-basic-linux.x64-11.2.0.4.0.zip) = 6642845116a0272964dd1d6623c2ff63292a4008
-RMD160 (oracle/instantclient-basic-linux.x64-11.2.0.4.0.zip) = 42560e1242664bec63abbf079994d45c719047fc
-SHA512 (oracle/instantclient-basic-linux.x64-11.2.0.4.0.zip) = 01ed32f1771bfa2f8ef1b81314843fb2b7b81582f33c07d86670c959bbb08355dc7cc8da586852bb353a3a914658d1e7828d6b5df884215de8d76881c956a989
-Size (oracle/instantclient-basic-linux.x64-11.2.0.4.0.zip) = 60704657 bytes
+SHA1 (oracle/instantclient-basic-linux.x64-19.5.0.0.0dbru.zip) = a73c7bf21954dff7c038973073d72d9de94bf999
+RMD160 (oracle/instantclient-basic-linux.x64-19.5.0.0.0dbru.zip) = 1b05ddb1dddb65542c163a4ffd6f32708cc56d82
+SHA512 (oracle/instantclient-basic-linux.x64-19.5.0.0.0dbru.zip) = 7860d27392c4601969a480199f263fbda0f0952a2dcab36efcbdf501568b624c6219d4966a8ff4936b6657b865fd9130f5fdab6bdceec2a45f54fe448f94db4e
+Size (oracle/instantclient-basic-linux.x64-19.5.0.0.0dbru.zip) = 75169949 bytes

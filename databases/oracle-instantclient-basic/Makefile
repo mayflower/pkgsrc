@@ -1,7 +1,7 @@
 # $NetBSD$
 
 PKGNAMESUFFIX=		basic
-DISTNAME=		instantclient-${PKGNAMESUFFIX}-${LINUXARCH}-${ORACLEVERSION}
+DISTNAME=		instantclient-${PKGNAMESUFFIX}-${LINUXARCH}-${ORACLEVERSION}dbru
 PKGNAME=		oracle-instantclient-${PKGNAMESUFFIX}-${ORACLEVERSION}
 CATEGORIES=		databases
 MASTER_SITES=		#http://www.oracle.com/technology/software/tech/oci/instantclient/
@@ -10,7 +10,7 @@ EXTRACT_SUFX=		.zip
 
 MAINTAINER=		xaver@loppenstedt.de
 HOMEPAGE=		http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html
-COMMENT=		Oracle 11 Linux InstantClient basics for RDBMS 8.1.2+
+COMMENT=		Oracle 19 Linux InstantClient basics for RDBMS 8.1.2+
 LICENSE=	        oracle-binary-code-license
 
 NO_BUILD=		yes
@@ -18,22 +18,34 @@ NO_BUILD=		yes
 RESTRICTED=		Packaging prohibited by Oracle license
 
 LINUXARCH=		linux.x64
-ORACLEVERSION=		11.2.0.4.0
+ORACLEVERSION=		19.5.0.0.0
 
 BINS_LIST=		adrci genezi uidrvci
 
 DOCS_LIST=		BASIC_README
 
-LIBS_LIST=		libclntsh.so.11.1	\
-			libnnz11.so		\
+LIBS_LIST=		libclntshcore.so.19.1	\
+			libclntsh.so.10.1	\
+			libclntsh.so.11.1	\
+			libclntsh.so.12.1	\
+			libclntsh.so.18.1	\
+			libclntsh.so.19.1	\
+			libipc1.so		\
+			libmql1.so		\
+			libnnz19.so		\
+			libocci.so.10.1		\
 			libocci.so.11.1		\
+			libocci.so.12.1		\
+			libocci.so.18.1		\
+			libocci.so.19.1		\
 			libociei.so		\
-			libocijdbc11.so		\
-			ojdbc5.jar		\
-			ojdbc6.jar		\
+			libocijdbc19.so		\
+			liboramysql19.so	\
+			ojdbc8.jar		\
+			ucp.jar			\
 			xstreams.jar
 
-WRKSRC=			${WRKDIR}/instantclient_11_2
+WRKSRC=			${WRKDIR}/instantclient_19_5
 
 INSTBINSDIR=		${STAGEDIR}${PREFIX}/oracle/instant_client/${ORACLEVERSION}
 INSTDOCSDIR=		${STAGEDIR}${PREFIX}/oracle/instant_client/${ORACLEVERSION}
@@ -64,6 +76,7 @@ do-install:
 .for i in ${LIBS_LIST}
 	${INSTALL_DATA} ${WRKSRC}/${i} ${DESTDIR}/${INSTLIBSDIR}/${i}
 .endfor
-	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libclntsh.so.11.1 libclntsh.so)
+	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libclntsh.so.18.1 libclntsh.so)
+	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libocci.so.18.1 libocci.so)
 
 .include "../../mk/bsd.pkg.mk"
