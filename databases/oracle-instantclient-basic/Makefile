@@ -41,6 +41,8 @@ LIBS_LIST=		libclntshcore.so.19.1	\
 			libociei.so		\
 			libocijdbc19.so		\
 			liboramysql19.so	\
+			libclntsh.so		\
+			libocci.so		\
 			ojdbc8.jar		\
 			ucp.jar			\
 			xstreams.jar
@@ -76,7 +78,7 @@ do-install:
 .for i in ${LIBS_LIST}
 	${INSTALL_DATA} ${WRKSRC}/${i} ${DESTDIR}/${INSTLIBSDIR}/${i}
 .endfor
-	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libclntsh.so.18.1 libclntsh.so)
-	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libocci.so.18.1 libocci.so)
+	(cd ${DESTDIR}/${INSTLIBSDIR}; ln -s libclntshcore.so.19.1 libclntshcore.so)
+
 
 .include "../../mk/bsd.pkg.mk"
