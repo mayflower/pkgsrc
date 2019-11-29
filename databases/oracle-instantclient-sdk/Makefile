@@ -1,7 +1,7 @@
 # $NetBSD$
 
 PKGNAMESUFFIX=		sdk
-DISTNAME=		instantclient-${PKGNAMESUFFIX}-${LINUXARCH}-${ORACLEVERSION}
+DISTNAME=		instantclient-${PKGNAMESUFFIX}-${LINUXARCH}-${ORACLEVERSION}dbru
 PKGNAME=		oracle-instantclient-${PKGNAMESUFFIX}-${ORACLEVERSION}
 CATEGORIES=		databases
 MASTER_SITES=		#http://www.oracle.com/technology/software/tech/oci/instantclient/
@@ -10,7 +10,7 @@ EXTRACT_SUFX=		.zip
 
 MAINTAINER=		xaver@loppenstedt.de
 HOMEPAGE=		http://www.oracle.com/technology/tech/oci/instantclient/instantclient.html
-COMMENT=		Oracle 11 Linux InstantClient SDK for RDBMS 8.1.2+
+COMMENT=		Oracle 19 Linux InstantClient SDK for RDBMS 8.1.2+
 LICENSE=	        oracle-binary-code-license
 
 NO_BUILD=		yes
@@ -18,39 +18,64 @@ NO_BUILD=		yes
 RESTRICTED=		Packaging prohibited by Oracle license
 
 LINUXARCH=		linux.x64
-ORACLEVERSION=		11.2.0.4.0
+ORACLEVERSION=		19.5.0.0.0
 
-INCS_LIST=	ldap.h \
-	nzerror.h \
-	nzt.h \
-	occi.h \
-	occiAQ.h \
-	occiCommon.h \
-	occiControl.h \
-	occiData.h \
-	occiObjects.h \
-	oci.h \
-	oci1.h \
-	oci8dp.h \
+INCS_LIST=	xmlproc.h \
+	xmlctx.hpp \
+	xml.hpp \
+	oraxsd.hpp \
 	ociap.h \
-	ociapr.h \
-	ocidef.h \
-	ocidem.h \
-	ocidfn.h \
+	xmldf.h \
+	xmlurl.h \
+	oci1.h \
 	ociextp.h \
-	ocikpr.h \
-	ocixmldb.h \
-	ocixstream.h \
+	ldap.h \
+	orastruc.h \
+	oraxsd.h \
+	xmlsoapc.hpp \
 	odci.h \
-	oratypes.h \
+	ocixstream.h \
+	occi.h \
 	ori.h \
-	orid.h \
-	orl.h \
-	oro.h \
+	xmldav.h \
 	ort.h \
-	xa.h
+	occiData.h \
+	xmlsoap.hpp \
+	nzerror.h \
+	oci8dp.h \
+	occiControl.h \
+	xmlotn.h \
+	oci.h \
+	ociapr.h \
+	occiCommon.h \
+	xmlerr.h \
+	ocidfn.h \
+	oraxmlcg.h \
+	ocikpr.h \
+	xml.h \
+	occiObjects.h \
+	oraxml.h \
+	orid.h \
+	oratypes.h \
+	xmlxvm.h \
+	oro.h \
+	ocidef.h \
+	xa.h \
+	xmlev.h \
+	xmlsoap.h \
+	occiAQ.h \
+	ocidem.h \
+	ocixmldb.h \
+	xmlsch.h \
+	xmlxsl.h \
+	nzt.h \
+	oraxml.hpp \
+	xmlotn.hpp \
+	xmlxptr.h \
+	ociver.h \
+	orl.h
 
-WRKSRC=			${WRKDIR}/instantclient_11_2
+WRKSRC=			${WRKDIR}/instantclient_19_5
 
 INSTINCSDIR=		${STAGEDIR}${PREFIX}/oracle/instant_client/${ORACLEVERSION}/sdk/include
 
