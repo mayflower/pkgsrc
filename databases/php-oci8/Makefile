@@ -8,7 +8,7 @@ USE_PHP_EXT_PATCHES=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
-ORACLEVERSION=		11.2.0.4.0
+ORACLEVERSION=		19.5.0.0.0
 DEPENDS+=               oracle-instantclient-basic>=${ORACLEVERSION}:../../databases/oracle-instantclient-basic
 DEPENDS+=               oracle-instantclient-sdk>=${ORACLEVERSION}:../../databases/oracle-instantclient-sdk
 ORACLE_HOME=		${PREFIX}/oracle/instant_client/${ORACLEVERSION}
