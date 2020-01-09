@@ -746,6 +746,8 @@ lib/samba/vfs/extd_audit.${SOEXT}
 lib/samba/vfs/fake_perms.${SOEXT}
 lib/samba/vfs/fruit.${SOEXT}
 lib/samba/vfs/full_audit.${SOEXT}
+lib/samba/vfs/glusterfs_fuse.${SOEXT}
+lib/samba/vfs/gpfs.${SOEXT}
 lib/samba/vfs/linux_xfs_sgid.${SOEXT}
 lib/samba/vfs/media_harmony.${SOEXT}
 lib/samba/vfs/netatalk.${SOEXT}
@@ -843,6 +845,8 @@ man/man8/vfs_default_quota.8
 man/man8/vfs_dirsort.8
 man/man8/vfs_extd_audit.8
 man/man8/vfs_fake_perms.8
+man/man8/vfs_glusterfs_fuse.8
+man/man8/vfs_gpfs.8
 man/man8/vfs_fruit.8
 man/man8/vfs_full_audit.8
 man/man8/vfs_linux_xfs_sgid.8
