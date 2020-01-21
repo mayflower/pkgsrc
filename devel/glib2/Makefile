@@ -68,6 +68,7 @@ post-extract:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/gettext-asprintf/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/meson/build.mk"
 .include "../../devel/libffi/buildlink3.mk"
