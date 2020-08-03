@@ -13,7 +13,7 @@ LICENSE=	modified-bsd
 TEST_DEPENDS+=	tcl>=8.5:../../lang/tcl
 
 USE_LANGUAGES=	c99
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 
 .include "../../mk/bsd.prefs.mk"
 
