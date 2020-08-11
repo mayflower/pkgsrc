@@ -1,6 +1,19 @@
 $NetBSD: distinfo,v 1.2 2018/08/23 08:37:06 fhajny Exp $
 
-SHA1 (pecl-gearman/gearman-2.0.5.tar.gz) = ae9df19633d78f8fe8863ea40be77cef1208e6d3
-RMD160 (pecl-gearman/gearman-2.0.5.tar.gz) = dcb9c7c03430faa631129712504229808c9d177f
-SHA512 (pecl-gearman/gearman-2.0.5.tar.gz) = f8b8f8291423a37263a0d3bf7a702d0bb9c8f3d18922388af71ac710db7dcd1755c9d143364c1427b584a3852dfccba254468c9df9cadbc1249c9c7e52510353
-Size (pecl-gearman/gearman-2.0.5.tar.gz) = 42007 bytes
+SHA1 (pecl-gearman/gearman-2.0.6.tar.gz) = 1b199e166134a47792ba1aae2c3e945bae00fc13
+RMD160 (pecl-gearman/gearman-2.0.6.tar.gz) = 029bdd224c6774f504582f6fca882635e1bb0dcd
+SHA512 (pecl-gearman/gearman-2.0.6.tar.gz) = 36e7507b9a14009b86ae1a0433d5be7d8f3f39732f8156b90783ce2f5f985735d1be32bf3cc4b513eef5aa7d39b672257e31ba5c3f73408eef73d1c1b1162785
+Size (pecl-gearman/gearman-2.0.6.tar.gz) = 42038 bytes
+SHA1 (patch-php__gearman.c) = b29207b894525880a8aecaa735c4b098cf48e552
+SHA1 (patch-php__gearman__client.c) = f4e12051ad1f57e1ef31b8ec23ff7b21c32b21e9
+SHA1 (patch-php__gearman__client.h) = e8095895eb9ede04621f1791657b881a2dd57ace
+SHA1 (patch-php__gearman__job.c) = 6f346223b3bd28a728a93231d1017378159f9647
+SHA1 (patch-php__gearman__job.h) = 49d2598aa2f8d2ce8add2fc8ee72903bb1c2e3b0
+SHA1 (patch-php__gearman__task.c) = 097c19ad9670639d7bfc13e2c4e120f50f67eae9
+SHA1 (patch-php__gearman__task.h) = aeac235b4168bec58a1f2cdbf032849bee460262
+SHA1 (patch-php__gearman__worker.c) = da5c2044511e1338c4b9f449cc5d9ed766827889
+SHA1 (patch-php__gearman__worker.h) = 44b61497eb4e70aad9bd130cd51d87e16e52db15
+SHA1 (patch-tests_gearman__client__022.phpt) = 7f8cdda84a8c73f64b20f79eee6d4eb8c5f913b1
+SHA1 (patch-tests_gearman__job__003.phpt) = 40e567859abe1246352a081a572b19fc0f1ac8ff
+SHA1 (patch-tests_gearman__task__006.phpt) = 91c3baa94287769c2f8317ff3c842d59bb69d08a
+SHA1 (patch-tests_gearman__worker__017.phpt) = 4ccb192b0a7ac7c44c7a8bc199a6861253d29333
