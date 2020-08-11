@@ -1,9 +1,8 @@
 # $NetBSD: Makefile,v 1.18 2020/05/22 10:56:04 adam Exp $
 
 MODNAME=	gearman
-PECL_VERSION=	2.0.5
+PECL_VERSION=	2.0.6
 DISTNAME=	gearman-${PECL_VERSION}
-PKGREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GITHUB:=wcgallego/}
 GITHUB_PROJECT=	pecl-gearman
@@ -18,7 +17,7 @@ LICENSE=	php
 
 WRKSRC=	${WRKDIR}/pecl-gearman-gearman-${PECL_VERSION}
 
-PHP_VERSIONS_ACCEPTED=	72
+PHP_VERSIONS_ACCEPTED=	72 73 74
 
 CONFIGURE_ARGS+=	--with-gearman=shared,${BUILDLINK_PREFIX.gearmand}
 
