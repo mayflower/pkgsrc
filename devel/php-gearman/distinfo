@@ -1,6 +1,7 @@
 $NetBSD: distinfo,v 1.2 2018/08/23 08:37:06 fhajny Exp $
 
-SHA1 (pecl-gearman/gearman-2.0.5.tar.gz) = ae9df19633d78f8fe8863ea40be77cef1208e6d3
-RMD160 (pecl-gearman/gearman-2.0.5.tar.gz) = dcb9c7c03430faa631129712504229808c9d177f
-SHA512 (pecl-gearman/gearman-2.0.5.tar.gz) = f8b8f8291423a37263a0d3bf7a702d0bb9c8f3d18922388af71ac710db7dcd1755c9d143364c1427b584a3852dfccba254468c9df9cadbc1249c9c7e52510353
-Size (pecl-gearman/gearman-2.0.5.tar.gz) = 42007 bytes
+SHA1 (pecl-gearman/gearman-2.0.6.tar.gz) = 1b199e166134a47792ba1aae2c3e945bae00fc13
+RMD160 (pecl-gearman/gearman-2.0.6.tar.gz) = 029bdd224c6774f504582f6fca882635e1bb0dcd
+SHA512 (pecl-gearman/gearman-2.0.6.tar.gz) = 36e7507b9a14009b86ae1a0433d5be7d8f3f39732f8156b90783ce2f5f985735d1be32bf3cc4b513eef5aa7d39b672257e31ba5c3f73408eef73d1c1b1162785
+Size (pecl-gearman/gearman-2.0.6.tar.gz) = 42038 bytes
+SHA1 (patch-php__gearman.c) = dcc6efc0b1792fa21086ec292ee60bc16c091968
