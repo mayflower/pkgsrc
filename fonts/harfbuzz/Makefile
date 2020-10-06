@@ -16,7 +16,7 @@ GCC_REQD+=	4.9
 .include "../../mk/bsd.prefs.mk"
 .include "../../graphics/librsvg/available.mk"
 
-USE_LANGUAGES=	c c++
+USE_LANGUAGES=	c99 c++
 USE_TOOLS+=	pkg-config
 
 # cairo/fontconfig are only needed for command line utilities
