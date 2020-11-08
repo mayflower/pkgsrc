@@ -13,5 +13,7 @@ COMMENT=	Utility to send mail via SMTP from command line
 LICENSE=	modified-bsd
 
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=        --with-openssl=${SSLBASE}
 
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
